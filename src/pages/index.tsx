@@ -4,12 +4,13 @@ import Link from 'next/link'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { IconContext } from 'react-icons'
 
-import profilePic from '@/../public/images/background.webp'
-import lavidaPreviewImage from '@/../public/images/lavida-website-preview.webp'
+import profilePic from '@public/images/background.webp'
+import lavidaPreviewImage from '@public/images/lavida-website-preview.webp'
 
 import SkillBox from '@/components/skillBox'
 import { LinkButton } from '@/components/buttons'
 import Head from 'next/head'
+import { Icon } from '@iconify/react'
 
 export default function Home() {
 	return (
@@ -22,8 +23,11 @@ export default function Home() {
 			<div className="grid grid-cols-1 grid-rows-1 w-full justify-center items-center place-items-center min-h-[60vh]">
 				<Image
 					src={profilePic}
+					layout="fill"
 					alt="Space background"
 					className="-z-10 object-cover max-h-[60vh] w-full h-full top-0 col-start-1 row-start-1"
+					sizes="(min-width: 768px) 70vw, (min-width: 1200px) 80vw, 100vw"
+					priority
 				/>
 				<div className="flex flex-col w-4/5 gap-y-4 col-start-1 row-start-1">
 					<h1 className="flex flex-col gap-y-4 lg:text-7xl text-5xl text-slate-100">
@@ -58,27 +62,85 @@ export default function Home() {
 			<div className="flex flex-col items-center text-center gap-y-6 my-4">
 				<h2 className="text-3xl w-10/12">Technologies that I've used</h2>
 
-				<div className="flex flex-wrap flex-row gap-3 w-3/5 items-center justify-center">
-					<SkillBox name="Java" />
-					<SkillBox name="Git" />
-					<SkillBox name="Github" />
-					<SkillBox name="Docker" />
-					<SkillBox name="Python" />
-					<SkillBox name="JavaScript" />
-					<SkillBox name="TypeScript" />
-					<SkillBox name="Nuxt3" />
-					<SkillBox name="Nuxt2" />
-					<SkillBox name="MySQL" />
-					<SkillBox name="Linode" />
-					<SkillBox name="NextJS" />
-					<SkillBox name="Svelte-kit" />
-					<SkillBox name="Godot" />
-					<SkillBox name="Wordpress" />
-					<SkillBox name="Linux" />
+				<div className="flex flex-wrap flex-row gap-3 w-4/5 items-center justify-center">
+					<SkillBox>
+						<Icon icon="logos:java" fontSize="1.5em" />
+						<span>Java</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="devicon:git" fontSize="1.5em" />
+						<span>Git</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="mdi:github" fontSize="1.5em" />
+						<span>Github</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="skill-icons:docker" fontSize="1.5em" />
+						<span>Docker</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="logos:python" fontSize="1.5em" />
+						<span>Python</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="logos:javascript" fontSize="1.5em" />
+						<span>JavaScript</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="devicon:typescript" fontSize="1.5em" />
+						<span>TypeScript</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="skill-icons:nuxtjs-dark" fontSize="1.5em" />
+						<span>Nuxt</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="logos:mysql" fontSize="1.5em" />
+						<span>MySQL</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="devicon:godot" fontSize="1.5em" />
+						<span>Godot</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="logos:linode" fontSize="1.5em" />
+						<span>Linode</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="skill-icons:nextjs-light" fontSize="1.5em" />
+						<span>NextJS</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="devicon:svelte" fontSize="1.5em" />
+						<span>Svelte-kit</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="ic:baseline-wordpress" fontSize="1.5em" />
+						<span>Wordpress</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="iconoir:linux" fontSize="1.5em" />
+						<span>Linux</span>
+					</SkillBox>
 				</div>
 			</div>
 
-			<div className="w-4/5 h-[2px] border-slate-100 border-dashed border-[1px]" />
+			<div className="xl:w-4/5 w-11/12 h-[2px] border-slate-100 border-dashed border-[1px]" />
 
 			<div className="flex flex-col items-center text-center gap-y-16 my-4 w-full">
 				<h2 className="text-3xl w-10/12">Some projects that I have done</h2>
@@ -120,14 +182,14 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div>
+				<div className="w-4/5">
 					<Link href="https://github.com/ItsOnlyGame" target="_blank" className="underline">
 						You should check my Github for more projects ;)
 					</Link>
 				</div>
 			</div>
 
-			<div className="w-4/5 h-[2px] border-slate-100 border-dashed border-[1px]" />
+			<div className="xl:w-4/5 w-11/12 h-[2px] border-slate-100 border-dashed border-[1px]" />
 
 			<div className="flex flex-col items-center text-center gap-y-6 my-4 w-full">
 				<h2 className="text-3xl w-10/12">Here are some places I visit sometimes</h2>

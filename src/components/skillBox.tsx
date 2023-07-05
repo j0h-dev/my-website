@@ -1,11 +1,9 @@
+import { ReactNode } from 'react'
+
 interface SkillBoxProps {
-	name?: string
+	children?: ReactNode
 }
 
 export default function SkillBox(props: SkillBoxProps) {
-	return (
-		<div className="p-3 rounded-xl bg-slate-200 text-black">
-			<p>{props.name}</p>
-		</div>
-	)
+	return <div className="flex flex-row gap-x-2 items-center justify-center p-3 rounded-xl bg-slate-200 text-black">{props.children}</div>
 }
