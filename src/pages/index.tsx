@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { IconContext } from 'react-icons'
-
 import profilePic from '@public/images/background.webp'
 import lavidaPreviewImage from '@public/images/lavida-website-preview.webp'
 
@@ -137,6 +134,10 @@ export default function Home() {
 						<Icon icon="iconoir:linux" fontSize="1.5em" />
 						<span>Linux</span>
 					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="logos:stripe" fontSize="1.5em" />
+					</SkillBox>
 				</div>
 			</div>
 
@@ -194,28 +195,26 @@ export default function Home() {
 			<div className="flex flex-col items-center text-center gap-y-6 my-4 w-full">
 				<h2 className="text-3xl w-10/12">Here are some places I visit sometimes</h2>
 
-				<IconContext.Provider value={{ size: '28px' }}>
-					<div className="flex flex-wrap flex-row gap-3 w-3/5 items-center justify-center">
-						<Link
-							href="https://github.com/ItsOnlyGame"
-							target="_blank"
-							className="flex flex-row gap-x-2 justify-center items-center"
-						>
-							<AiFillGithub />
-							<p>@ItsOnlyGame</p>
-						</Link>
-					</div>
-					<div className="flex flex-wrap flex-row gap-3 w-3/5 items-center justify-center">
-						<Link
-							href="https://www.linkedin.com/in/jaroheinonen/"
-							target="_blank"
-							className="flex flex-row gap-x-2 justify-center items-center"
-						>
-							<AiFillLinkedin />
-							<p>Jaro Heinonen</p>
-						</Link>
-					</div>
-				</IconContext.Provider>
+				<div className="flex flex-wrap flex-row gap-3 w-3/5 items-center justify-center">
+					<Link
+						href="https://github.com/ItsOnlyGame"
+						target="_blank"
+						className="flex flex-row gap-x-2 justify-center items-center"
+					>
+						<Icon icon="mdi:github" fontSize="2em" />
+						<p>@ItsOnlyGame</p>
+					</Link>
+				</div>
+				<div className="flex flex-wrap flex-row gap-3 w-3/5 items-center justify-center">
+					<Link
+						href="https://www.linkedin.com/in/jaroheinonen/"
+						target="_blank"
+						className="flex flex-row gap-x-2 justify-center items-center"
+					>
+						<Icon icon="mdi:linkedin" fontSize="2em" />
+						<p>Jaro Heinonen</p>
+					</Link>
+				</div>
 			</div>
 		</main>
 	)
