@@ -1,9 +1,5 @@
 import { ReactNode } from 'react'
 
-interface SkillBoxProps {
-	children?: ReactNode
-}
-
-export default function SkillBox(props: SkillBoxProps) {
-	return <div className="flex flex-row gap-x-2 items-center justify-center p-3 rounded-xl bg-slate-200 text-black">{props.children}</div>
+export default function SkillBox({ children }: { children: ReactNode }) {
+	return <div className="flex flex-row gap-x-2 items-center justify-center p-2 rounded-xl bg-gray-700 text-gray-100">{ children }</div>
 }

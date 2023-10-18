@@ -20,7 +20,6 @@ export default function Home() {
 			<div className="grid grid-cols-1 grid-rows-1 w-full justify-center items-center place-items-center min-h-[60vh]">
 				<Image
 					src={profilePic}
-					layout="fill"
 					alt="Space background"
 					className="-z-10 object-cover max-h-[60vh] w-full h-full top-0 col-start-1 row-start-1"
 					sizes="(min-width: 768px) 70vw, (min-width: 1200px) 80vw, 100vw"
@@ -96,6 +95,15 @@ export default function Home() {
 					</SkillBox>
 
 					<SkillBox>
+						<Icon icon="devicon:csharp" fontSize="1.65em" />
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="logos:vue" fontSize="1.25em" />
+						<span>Vue</span>
+					</SkillBox>
+
+					<SkillBox>
 						<Icon icon="skill-icons:nuxtjs-dark" fontSize="1.5em" />
 						<span>Nuxt</span>
 					</SkillBox>
@@ -113,6 +121,11 @@ export default function Home() {
 					<SkillBox>
 						<Icon icon="logos:linode" fontSize="1.5em" />
 						<span>Linode</span>
+					</SkillBox>
+
+					<SkillBox>
+						<Icon icon="devicon:react" fontSize="1.5em" />
+						<span>React</span>
 					</SkillBox>
 
 					<SkillBox>
