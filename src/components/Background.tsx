@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
-import { type Container, type ISourceOptions } from '@tsparticles/engine'
+import { type ISourceOptions } from '@tsparticles/engine'
 import { loadFull } from 'tsparticles'
 
 export default function Background({ className }: { className: string }) {
@@ -14,10 +14,6 @@ export default function Background({ className }: { className: string }) {
 			setInit(true)
 		})
 	}, [])
-
-	const particlesLoaded = async (container?: Container): Promise<void> => {
-		console.log(container)
-	}
 
 	const options: ISourceOptions = useMemo(
 		() => ({
@@ -84,14 +80,7 @@ export default function Background({ className }: { className: string }) {
 	)
 
 	if (init) {
-		return (
-			<Particles
-				className={`background-gradient-animation ${className}`}
-				id="tsparticles"
-				particlesLoaded={particlesLoaded}
-				options={options}
-			/>
-		)
+		return <Particles className={`background-gradient-animation ${className}`} id="tsparticles" options={options} />
 	}
 
 	return <></>

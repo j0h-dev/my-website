@@ -1,10 +1,16 @@
+import Footer from './Footer'
+import Header from './Header'
+
 export default function Layout({ children }: React.PropsWithChildren) {
 	return (
 		<>
-			<main>{children}</main>
-			<div className="flex flex-col h-24 items-center justify-center text-slate-100">
-				<p>@Made by Jaro Heinonen | {new Date().getFullYear()}</p>
-			</div>
+			<Header />
+
+			<main className="flex flex-col items-center w-full h-full my-2 px-4">
+				<div className="max-w-7xl w-full">{children}</div>
+			</main>
+
+			<Footer />
 		</>
 	)
 }
