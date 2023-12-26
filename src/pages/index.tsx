@@ -217,7 +217,7 @@ export default function Home() {
 			<div className="xl:w-4/5 w-11/12 h-[2px] border-slate-100 border-dashed border-[1px]" />
 
 			<div className="flex flex-col items-center text-center gap-y-6 my-4 w-full">
-				<h2 className="text-3xl w-10/12">Here are some places I visit sometimes</h2>
+				<h2 className="text-3xl w-10/12">Here are some places you should visit</h2>
 
 				<div className="flex flex-wrap flex-row gap-3 w-3/5 items-center justify-center">
 					<Link href="https://github.com/ItsOnlyGame" target="_blank" className="flex flex-row gap-x-2 justify-center items-center">
