@@ -174,22 +174,19 @@ export default function Home() {
 					<div className="flex flex-col gap-y-5 items-start justify-center text-left">
 						<div>
 							<h3 className="text-3xl">Liikuntapiste La Vida's website</h3>
-							<p>2020 - now</p>
+							<p>2020 May - Present</p>
 						</div>
 
 						<p>
-							I was commisioned to create a website for a business named Liikuntapiste La Vida. It's a gym that offers services like spa
-							treatment, group exercise and other exercise related services.
+							I was commisioned to create a website for a business named Liikuntapiste La Vida. The business offers a gym, spa treatment,
+							group exercise and other exercise related services.
 						</p>
 						<p>
 							The website was created fully from scratch. The frontend has had multiple intereation in multiple different JavaScript
 							frameworks like Vue.js, Next.js, Svelte-kit and finally Nuxt.
 						</p>
 						<p>The backend was created in TypeScript using the NestJS backend framework.</p>
-						<p>
-							While doing this project I learned multiple different frameworks (those previously mentioned), technologies and other useful
-							things. Here is a few things I learned:
-						</p>
+						<p>Here is a few things I learned:</p>
 
 						<ul className="list-disc list-inside">
 							<li>Multiple frontend frameworks</li>
@@ -199,7 +196,7 @@ export default function Home() {
 							<li>Website design and deployment</li>
 						</ul>
 
-						<p>This website is currenly under my upkeep and management.</p>
+						<p>I currently upkeep and manage this website, and sometimes add new features when requested.</p>
 
 						<LinkButton href="https://liikuntapistelavida.com" blank>
 							Click here to check it out
