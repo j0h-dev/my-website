@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { type ISourceOptions } from '@tsparticles/engine'
 import { loadFull } from 'tsparticles'
 
-export default function Background({ className }: { className: string }) {
+export default function ParticleBackground({ className }: { className: string }) {
 	const [init, setInit] = useState(false)
 
 	// this should be run only once per application lifetime
