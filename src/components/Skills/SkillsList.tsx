@@ -111,6 +111,11 @@ export default function SkillsList() {
 				<Icon icon="skill-icons:tailwindcss-dark" fontSize="1.5em" />
 				<span>Tailwind</span>
 			</SkillBox>
+
+			<SkillBox>
+				<Icon icon="skill-icons:prisma" fontSize="1.5em" />
+				<span>Prisma ORM</span>
+			</SkillBox>
 		</div>
 	)
 }
