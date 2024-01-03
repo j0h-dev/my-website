@@ -12,10 +12,10 @@ export default function Home() {
 				<meta name="description" content="This is my portfolio" key="desc" />
 			</Head>
 
-			<div className="flex flex-col items-center text-center gap-y-6 my-4 w-full">
+			<div className="flex flex-col items-center text-center gap-y-6 mt-8 w-full">
 				<h2 className="text-3xl w-full">About me</h2>
 
-				<div className="flex flex-col gap-y-4 w-full">
+				<div className="flex flex-col gap-y-4 w-full text-left">
 					<p>
 						I'm a second-year student at Turku University of Applied Sciences. I'm studying Information and communications technology. I'm
 						eager to learn new things about my field and have a wide variety of skills under my belt.
@@ -34,14 +34,14 @@ export default function Home() {
 
 			<Seperator />
 
-			<div className="flex flex-col items-center text-center gap-y-6 my-4">
+			<div className="flex flex-col items-center text-center gap-y-6">
 				<h2 className="text-3xl w-full">Technologies that I've used</h2>
 				<SkillsList />
 			</div>
 
 			<Seperator />
 
-			<div className="flex flex-col items-center text-center my-4 w-full">
+			<div className="flex flex-col items-center text-center w-full mb-8">
 				<h2 className="text-3xl">Some projects that I have worked in</h2>
 				<ProjectsList />
 
