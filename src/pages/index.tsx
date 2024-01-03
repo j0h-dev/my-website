@@ -41,7 +41,7 @@ export default function Home() {
 
 			<Seperator />
 
-			<div className="flex flex-col items-center text-center gap-y-16 my-4 w-full">
+			<div className="flex flex-col items-center text-center my-4 w-full">
 				<h2 className="text-3xl">Some projects that I have worked in</h2>
 				<ProjectsList />
 
