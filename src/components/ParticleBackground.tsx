@@ -53,27 +53,6 @@ export default function ParticleBackground({ className }: { className: string })
 					enable: true,
 				},
 			},
-			interactivity: {
-				events: {
-					onClick: {
-						enable: true,
-						mode: 'push',
-					},
-					onHover: {
-						enable: true,
-						mode: 'repulse',
-					},
-				},
-				modes: {
-					push: {
-						quantity: 4,
-					},
-					repulse: {
-						distance: 120,
-						duration: 1,
-					},
-				},
-			},
 			detectRetina: true,
 		}),
 		[]
