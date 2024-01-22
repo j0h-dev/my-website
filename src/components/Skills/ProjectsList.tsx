@@ -114,7 +114,7 @@ export default function ProjectsList() {
 					<div>
 						<h3 className="text-3xl">VarausApp</h3>
 						<p>Project work at School</p>
-						<p>September 2023 - December 2023</p>
+						<p>September 2023 - On going</p>
 					</div>
 
 					<p>I was a part of school work where this web application was created.</p>
