@@ -89,11 +89,6 @@ export default function SkillsList() {
 			</SkillBox>
 
 			<SkillBox>
-				<Icon icon="ic:baseline-wordpress" fontSize="1.5em" />
-				<span>Wordpress</span>
-			</SkillBox>
-
-			<SkillBox>
 				<Icon icon="iconoir:linux" fontSize="1.5em" />
 				<span>Linux</span>
 			</SkillBox>
