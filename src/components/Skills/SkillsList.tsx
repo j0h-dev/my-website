@@ -69,6 +69,11 @@ export default function SkillsList() {
 			</SkillBox>
 
 			<SkillBox>
+				<Icon icon="devicon:nodejs" fontSize="1.5em" />
+				<span>NodeJS</span>
+			</SkillBox>
+
+			<SkillBox>
 				<Icon icon="devicon:react" fontSize="1.5em" />
 				<span>React</span>
 			</SkillBox>
