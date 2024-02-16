@@ -10,6 +10,7 @@ export default function Home() {
 			<Head>
 				<title>&lt;Jaro /&gt; Portfolio</title>
 				<meta name="description" content="This is my portfolio" key="desc" />
+				<meta property="og:image" content="/images/preview.png" />
 			</Head>
 
 			<div className="flex flex-col items-center text-center gap-y-6 mt-8 w-full">
