@@ -15,7 +15,7 @@ export default function ProjectsList() {
 				<div className="flex flex-col gap-y-5 items-start justify-center text-left">
 					<div>
 						<h3 className="text-3xl">Liikuntapiste La Vida's website</h3>
-						<p>Freelance project</p>
+						<p>Freelance work</p>
 						<p>May 2020 - Present</p>
 					</div>
 
@@ -24,8 +24,8 @@ export default function ProjectsList() {
 						group exercise and other exercise related services.
 					</p>
 					<p>
-						The website was created fully from scratch. The frontend has had multiple intereation in multiple different JavaScript
-						frameworks like Vue.js, Next.js, Svelte-kit and finally Nuxt.
+						The frontend has had multiple iterations in multiple different JavaScript frameworks like Vue.js, Next.js, Svelte-kit and
+						finally Nuxt.
 					</p>
 					<p>The backend was created in TypeScript using the NestJS backend framework.</p>
 
@@ -44,7 +44,7 @@ export default function ProjectsList() {
 					<p>I currently upkeep and manage this website, and sometimes add new features when requested.</p>
 
 					<LinkButton href="https://liikuntapistelavida.com" blank>
-						Click here to check it out
+						Here is the site
 					</LinkButton>
 				</div>
 			</ProjectBox>
@@ -102,7 +102,7 @@ export default function ProjectsList() {
 					<p>The github repo also gives information about how to setup an automation for the sorting.</p>
 
 					<LinkButton href="https://github.com/ItsOnlyGame/my-spotify-playlist-sorter" blank>
-						Github
+						Here is the github repo
 					</LinkButton>
 				</div>
 			</ProjectBox>
@@ -114,11 +114,15 @@ export default function ProjectsList() {
 					<div>
 						<h3 className="text-3xl">VarausApp</h3>
 						<p>Project work at School</p>
-						<p>September 2023 - On going</p>
+						<p>September 2023 - February 2024</p>
+						<p>Finished</p>
 					</div>
 
-					<p>I was a part of school work where this web application was created.</p>
-					<p>I did various things including authenticaiton, UI design, backend devlopment and documentation</p>
+					<p>
+						This project was a part of school work. The app is a reservation tool for reserving theFirma office computers, meeting spaces
+						and different items.
+					</p>
+					<p>I did various things including authentication, UI design, backend development, documentation and deployment.</p>
 
 					<div>
 						<p>Techstack used:</p>
