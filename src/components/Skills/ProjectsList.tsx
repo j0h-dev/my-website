@@ -136,6 +136,25 @@ export default function ProjectsList() {
 					</div>
 				</div>
 			</ProjectBox>
+
+			<ProjectBox>
+				<div className="flex flex-col gap-y-5 items-start justify-center text-left">
+					<div>
+						<h3 className="text-3xl">Rift</h3>
+						<p>Github Project</p>
+					</div>
+
+					<div>
+						<p>Rift is a discord bot made with Java. </p>
+						<p>It's main purpose is to play music through YouTube or SoundCloud.</p>
+						<p>One of it's unique features is that it can translates Spotify Links to YouTube Videos.</p>
+					</div>
+
+					<LinkButton href="https://github.com/ItsOnlyGame/Rift" blank>
+						Just a link to a repo
+					</LinkButton>
+				</div>
+			</ProjectBox>
 		</div>
 	)
 }
