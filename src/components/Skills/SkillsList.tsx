@@ -10,6 +10,11 @@ export default function SkillsList() {
 			</SkillBox>
 
 			<SkillBox>
+				<Icon icon="devicon:kotlin" fontSize="1.5em" />
+				<span>Kotlin</span>
+			</SkillBox>
+
+			<SkillBox>
 				<Icon icon="devicon:git" fontSize="1.5em" />
 				<span>Git</span>
 			</SkillBox>
