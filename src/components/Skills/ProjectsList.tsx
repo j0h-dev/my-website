@@ -134,6 +134,10 @@ export default function ProjectsList() {
 							<li>Chakra UI</li>
 						</ul>
 					</div>
+
+					<LinkButton href="https://projector.thefirma.fi:4000" blank>
+						Link to the app
+					</LinkButton>
 				</div>
 			</ProjectBox>
 
