@@ -121,6 +121,11 @@ export default function SkillsList() {
 				<Icon icon="skill-icons:prisma" fontSize="1.5em" />
 				<span>Prisma ORM</span>
 			</SkillBox>
+
+			<SkillBox>
+				<Icon icon="ri:seo-fill" fontSize="1.5em" />
+				<span>SEO</span>
+			</SkillBox>
 		</div>
 	)
 }
