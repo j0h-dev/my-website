@@ -1,4 +1,4 @@
-import ParticleBackground from './ParticleBackground'
+import ParticleBackground from "./ParticleBackground";
 
 export default function Header() {
 	return (
@@ -15,5 +15,5 @@ export default function Header() {
 				<p className="md:text-2xl text-lg">I do cool stuff with computers</p>
 			</div>
 		</div>
-	)
+	);
 }

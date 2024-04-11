@@ -1,7 +1,7 @@
-import ProjectBox from '../ProjectBox'
-import SkillBox from '../SkillBox'
-import { Icon } from '@iconify/react'
-import { LinkButton } from '@/components/Buttons'
+import ProjectBox from "../ProjectBox";
+import SkillBox from "../SkillBox";
+import { Icon } from "@iconify/react";
+import { LinkButton } from "@/components/Buttons";
 
 export default function RiftBot() {
 	return (
@@ -40,5 +40,5 @@ export default function RiftBot() {
 				</LinkButton>
 			</div>
 		</ProjectBox>
-	)
+	);
 }

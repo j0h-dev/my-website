@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react'
-import SkillBox from './SkillBox'
+import { Icon } from "@iconify/react";
+import SkillBox from "./SkillBox";
 
 export default function SkillsList() {
 	return (
@@ -127,5 +127,5 @@ export default function SkillsList() {
 				<span>SEO</span>
 			</SkillBox>
 		</div>
-	)
+	);
 }

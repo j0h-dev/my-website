@@ -1,8 +1,8 @@
-import Lavida from './Projects/Lavida'
-import NuxtUIComponentCollection from './Projects/NuxtUIComponentCollection'
-import MySpotifyPlaylistSorter from './Projects/MySpotifyPlaylistSorter'
-import VarausApp from './Projects/VarausApp'
-import RiftBot from './Projects/RiftBot'
+import Lavida from "./Projects/Lavida";
+import NuxtUIComponentCollection from "./Projects/NuxtUIComponentCollection";
+import MySpotifyPlaylistSorter from "./Projects/MySpotifyPlaylistSorter";
+import VarausApp from "./Projects/VarausApp";
+import RiftBot from "./Projects/RiftBot";
 
 export default function ProjectsList() {
 	return (
@@ -13,5 +13,5 @@ export default function ProjectsList() {
 			<VarausApp />
 			<RiftBot />
 		</div>
-	)
+	);
 }

@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import ProjectBox from '../ProjectBox'
-import SkillBox from '../SkillBox'
-import { Icon } from '@iconify/react'
-import { LinkButton } from '@/components/Buttons'
+import Image from "next/image";
+import ProjectBox from "../ProjectBox";
+import SkillBox from "../SkillBox";
+import { Icon } from "@iconify/react";
+import { LinkButton } from "@/components/Buttons";
 
-import lavidaPreviewImage from '@public/images/lavida-website-preview.webp'
+import lavidaPreviewImage from "@public/images/lavida-website-preview.webp";
 
 export default function Lavida() {
 	return (
@@ -92,5 +92,5 @@ export default function Lavida() {
 				</LinkButton>
 			</div>
 		</ProjectBox>
-	)
+	);
 }

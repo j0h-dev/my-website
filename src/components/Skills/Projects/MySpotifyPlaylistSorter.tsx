@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import ProjectBox from '../ProjectBox'
-import SkillBox from '../SkillBox'
-import { Icon } from '@iconify/react'
-import { LinkButton } from '@/components/Buttons'
+import Image from "next/image";
+import ProjectBox from "../ProjectBox";
+import SkillBox from "../SkillBox";
+import { Icon } from "@iconify/react";
+import { LinkButton } from "@/components/Buttons";
 
-import mySpotifyPlaylistSorter from '@public/images/my-spotify-playlist-sorter.png'
+import mySpotifyPlaylistSorter from "@public/images/my-spotify-playlist-sorter.png";
 
 export default function MySpotifyPlaylistSorter() {
 	return (
@@ -58,5 +58,5 @@ export default function MySpotifyPlaylistSorter() {
 				</LinkButton>
 			</div>
 		</ProjectBox>
-	)
+	);
 }

@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import ProjectBox from '../ProjectBox'
-import { LinkButton } from '@/components/Buttons'
+import Image from "next/image";
+import ProjectBox from "../ProjectBox";
+import { LinkButton } from "@/components/Buttons";
 
 export default function NuxtUIComponentCollection() {
 	return (
@@ -32,5 +32,5 @@ export default function NuxtUIComponentCollection() {
 				</LinkButton>
 			</div>
 		</ProjectBox>
-	)
+	);
 }

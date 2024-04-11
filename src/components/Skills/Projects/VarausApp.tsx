@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import ProjectBox from '../ProjectBox'
-import SkillBox from '../SkillBox'
-import { Icon } from '@iconify/react'
-import { LinkButton } from '@/components/Buttons'
+import Image from "next/image";
+import ProjectBox from "../ProjectBox";
+import SkillBox from "../SkillBox";
+import { Icon } from "@iconify/react";
+import { LinkButton } from "@/components/Buttons";
 
-import varausAppImage from '@public/images/varausapp.png'
+import varausAppImage from "@public/images/varausapp.png";
 
 export default function VarausApp() {
 	return (
@@ -57,5 +57,5 @@ export default function VarausApp() {
 				</LinkButton>
 			</div>
 		</ProjectBox>
-	)
+	);
 }

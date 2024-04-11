@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import SkillsList from '@/components/Skills/SkillsList'
-import Seperator from '@/components/Seperator'
-import ProjectsList from '@/components/Skills/ProjectsList'
+import Link from "next/link";
+import Head from "next/head";
+import SkillsList from "@/components/Skills/SkillsList";
+import Seperator from "@/components/Seperator";
+import ProjectsList from "@/components/Skills/ProjectsList";
 
 export default function Home() {
 	return (
@@ -59,5 +59,5 @@ export default function Home() {
 				</div>
 			</div>
 		</main>
-	)
+	);
 }

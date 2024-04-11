@@ -1,19 +1,19 @@
-import { useEffect, useMemo, useState } from 'react'
-import Particles, { initParticlesEngine } from '@tsparticles/react'
-import { type ISourceOptions } from '@tsparticles/engine'
-import { loadFull } from 'tsparticles'
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { type ISourceOptions } from "@tsparticles/engine";
+import { loadFull } from "tsparticles";
 
 export default function ParticleBackground({ className }: { className: string }) {
-	const [init, setInit] = useState(false)
+	const [init, setInit] = useState(false);
 
 	// this should be run only once per application lifetime
 	useEffect(() => {
 		initParticlesEngine(async (engine) => {
-			await loadFull(engine)
+			await loadFull(engine);
 		}).then(() => {
-			setInit(true)
-		})
-	}, [])
+			setInit(true);
+		});
+	}, []);
 
 	const options: ISourceOptions = useMemo(
 		() => ({
@@ -24,26 +24,26 @@ export default function ParticleBackground({ className }: { className: string })
 					value: 80,
 				},
 				color: {
-					value: '#fff', // Particle color
+					value: "#fff", // Particle color
 				},
 				shape: {
-					type: 'circle', // Particle shape
+					type: "circle", // Particle shape
 				},
 				size: {
 					value: { min: 1, max: 4 }, // Particle size
 				},
 				move: {
-					direction: 'none',
+					direction: "none",
 					enable: true,
 					outModes: {
-						default: 'bounce',
+						default: "bounce",
 					},
 					random: false,
 					speed: 1,
 					straight: false,
 				},
 				links: {
-					color: '#ffffff',
+					color: "#ffffff",
 					distance: 150,
 					enable: true,
 					opacity: 0.5,
@@ -55,12 +55,12 @@ export default function ParticleBackground({ className }: { className: string })
 			},
 			detectRetina: true,
 		}),
-		[]
-	)
+		[],
+	);
 
 	if (init) {
-		return <Particles className={`background-gradient-animation ${className}`} id="tsparticles" options={options} />
+		return <Particles className={`background-gradient-animation ${className}`} id="tsparticles" options={options} />;
 	}
 
-	return <></>
+	return <></>;
 }
