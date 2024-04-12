@@ -38,8 +38,7 @@ export default function VarausApp() {
           </SkillBox>
 
           <SkillBox>
-            <Icon icon="simple-icons:go" fontSize="1.5em" />
-            <span>Go</span>
+            <Icon icon="logos:go" fontSize="1.5em" />
           </SkillBox>
 
           <SkillBox>
