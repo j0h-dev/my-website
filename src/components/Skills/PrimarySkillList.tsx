@@ -63,6 +63,16 @@ export default function PrimarySkillList() {
         <Icon icon="ri:seo-fill" fontSize="1.5em" />
         <span>SEO</span>
       </SkillBox>
+
+      <SkillBox>
+        <Icon icon="simple-icons:express" fontSize="1.5em" />
+        <span>Express</span>
+      </SkillBox>
+
+      <SkillBox>
+        <Icon icon="simple-icons:nestjs" fontSize="1.5em" />
+        <span>NestJS</span>
+      </SkillBox>
     </div>
   );
 }

@@ -130,6 +130,21 @@ export default function SkillsList() {
       <SkillBox>
         <Icon icon="logos:go" fontSize="1.5em" />
       </SkillBox>
+
+      <SkillBox>
+        <Icon icon="simple-icons:jest" fontSize="1.5em" />
+        <span>Jest</span>
+      </SkillBox>
+
+      <SkillBox>
+        <Icon icon="simple-icons:express" fontSize="1.5em" />
+        <span>Express</span>
+      </SkillBox>
+
+      <SkillBox>
+        <Icon icon="simple-icons:nestjs" fontSize="1.5em" />
+        <span>NestJS</span>
+      </SkillBox>
     </div>
   );
 }
