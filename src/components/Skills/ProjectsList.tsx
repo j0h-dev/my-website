@@ -1,3 +1,4 @@
+import Cataclysm from "../Projects/Cataclysm";
 import Lavida from "../Projects/Lavida";
 import MySpotifyPlaylistSorter from "../Projects/MySpotifyPlaylistSorter";
 import NuxtUIComponentCollection from "../Projects/NuxtUIComponentCollection";
@@ -8,6 +9,7 @@ import YTDLPWebApp from "../Projects/YTDLPWebApp";
 export default function ProjectsList() {
   return (
     <div className="flex flex-col w-full divide-y">
+      <Cataclysm />
       <Lavida />
       <NuxtUIComponentCollection />
       <MySpotifyPlaylistSorter />
