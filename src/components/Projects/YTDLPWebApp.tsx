@@ -1,12 +1,12 @@
 import Image from "next/image";
-import ProjectBox from "../ProjectBox";
-import SkillBox from "../SkillBox";
+import ProjectBox from "../Skills/ProjectBox";
+import SkillBox from "../Skills/SkillBox";
 import { Icon } from "@iconify/react";
 import { LinkButton } from "@/components/Buttons";
 
 import ytdlpwebappImage from "@public/images/ytdlpwebappImage.png";
 
-export default function VarausApp() {
+export default function YTDLPWebApp() {
   return (
     <ProjectBox>
       <div className="flex flex-col gap-y-5 items-start justify-center text-left">
