@@ -1,12 +1,12 @@
-import ProjectBox from "../Skills/ProjectBox";
-import SkillBox from "../Skills/SkillBox";
-import { Icon } from "@iconify/react";
-import { LinkButton } from "@/components/Buttons";
+import { Icon } from '@iconify/react'
+import { Project } from '../project'
+import { Tag } from '../tag'
+import { Button } from '../ui/button'
 
-export default function RiftBot() {
+export function RiftBot() {
   return (
-    <ProjectBox>
-      <div className="flex flex-col gap-y-5 items-start justify-center text-left">
+    <Project>
+      <div className="flex flex-col items-start justify-center gap-y-5 text-left">
         <div>
           <h3 className="text-3xl">Rift</h3>
           <p>Github Project</p>
@@ -23,27 +23,27 @@ export default function RiftBot() {
           </p>
         </div>
 
-        <div className="flex flex-row gap-2 py-4 flex-wrap">
-          <SkillBox>
+        <div className="flex flex-row flex-wrap gap-2 py-4">
+          <Tag>
             <Icon icon="logos:java" fontSize="1.5em" />
             <span>Java</span>
-          </SkillBox>
+          </Tag>
 
-          <SkillBox>
+          <Tag>
             <Icon icon="ic:baseline-discord" fontSize="1.5em" />
             <span>Discord API</span>
-          </SkillBox>
+          </Tag>
 
-          <SkillBox>
+          <Tag>
             <Icon icon="mdi:spotify" fontSize="1.5em" />
             <span>Spotify API</span>
-          </SkillBox>
+          </Tag>
         </div>
 
-        <LinkButton href="https://github.com/ItsOnlyGame/Rift" blank>
-          Just a link to a repo
-        </LinkButton>
+        <a href="https://github.com/ItsOnlyGame/Rift" target="_blank">
+          <Button>Just a link to a repo</Button>
+        </a>
       </div>
-    </ProjectBox>
-  );
+    </Project>
+  )
 }

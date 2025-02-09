@@ -8,14 +8,4 @@
         <loc>https://heinonenjaro.xyz/</loc>
         <changefreq>monthly</changefreq>
     </url>
-
-    <url>
-        <loc>https://heinonenjaro.xyz/projects</loc>
-        <changefreq>monthly</changefreq>
-    </url>
-
-    <url>
-        <loc>https://heinonenjaro.xyz/contacts</loc>
-        <changefreq>monthly</changefreq>
-    </url>
 </urlset>

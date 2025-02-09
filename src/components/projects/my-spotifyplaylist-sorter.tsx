@@ -1,19 +1,17 @@
-import Image from "next/image";
-import { Icon } from "@iconify/react";
-import { LinkButton } from "@/components/Buttons";
-import ProjectBox from "../Skills/ProjectBox";
-import SkillBox from "../Skills/SkillBox";
-import mySpotifyPlaylistSorter from "@public/images/my-spotify-playlist-sorter.png";
+import { Icon } from '@iconify/react'
+import { Project } from '../project'
+import { Tag } from '../tag'
+import { Button } from '../ui/button'
 
-export default function MySpotifyPlaylistSorter() {
+export function MySpotifyPlaylistSorter() {
   return (
-    <ProjectBox>
-      <div className="flex flex-col gap-y-5 items-start justify-center text-left">
-        <Image
-          src={mySpotifyPlaylistSorter}
+    <Project>
+      <div className="flex flex-col items-start justify-center gap-y-5 text-left">
+        <img
+          src="/images/my-spotify-playlist-sorter.png"
           alt="My Spotify Playlist Sorter"
           width={600}
-          className="rounded-xl self-start"
+          className="self-start rounded-xl"
         />
         <div>
           <h3 className="text-3xl">My Spotify Playlist Sorter</h3>
@@ -31,12 +29,12 @@ export default function MySpotifyPlaylistSorter() {
 
         <p>
           The repo contains some small test to confirm that everything is
-          working as they should.{" "}
+          working as they should.{' '}
         </p>
 
         <p>The sorting goes like this:</p>
 
-        <ol className="list-decimal list-inside">
+        <ol className="list-inside list-decimal">
           <li>
             Tracks are sorted into groups of albums, that are ordered in the
             manner of the album.
@@ -56,35 +54,35 @@ export default function MySpotifyPlaylistSorter() {
           automation for the sorting.
         </p>
 
-        <div className="flex flex-row gap-2 py-4 flex-wrap">
-          <SkillBox>
+        <div className="flex flex-row flex-wrap gap-2 py-4">
+          <Tag>
             <Icon icon="logos:python" fontSize="1.5em" />
             <span>Python</span>
-          </SkillBox>
+          </Tag>
 
-          <SkillBox>
+          <Tag>
             <Icon icon="mdi:test-tube" fontSize="1.5em" />
             <span>Unit Test</span>
-          </SkillBox>
+          </Tag>
 
-          <SkillBox>
+          <Tag>
             <Icon icon="arcticons:automation" fontSize="1.5em" />
             <span>Automation</span>
-          </SkillBox>
+          </Tag>
 
-          <SkillBox>
+          <Tag>
             <Icon icon="mdi:spotify" fontSize="1.5em" />
             <span>Spotify API</span>
-          </SkillBox>
+          </Tag>
         </div>
 
-        <LinkButton
+        <a
           href="https://github.com/ItsOnlyGame/my-spotify-playlist-sorter"
-          blank
+          target="_blank"
         >
-          Here is the github repo
-        </LinkButton>
+          <Button> Here is the github repo</Button>
+        </a>
       </div>
-    </ProjectBox>
-  );
+    </Project>
+  )
 }
