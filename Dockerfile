@@ -1,32 +1,30 @@
-FROM oven/bun:latest AS base
+FROM oven/bun:1.2.2 AS base
 WORKDIR /usr/src/app
 
-# install dependencies into temp directory
-# this will cache them and speed up future builds
-FROM base AS install
+# Install dependencies
+FROM base AS dependencies
 RUN mkdir -p /temp/dev
-COPY package.json bun.lockb /temp/dev/
+COPY package.json bun.lock* /temp/dev/
 RUN cd /temp/dev && bun install --frozen-lockfile
 
 
-# install with --production (exclude devDependencies)
-RUN mkdir -p /temp/prod
-COPY package.json bun.lockb /temp/prod/
-RUN cd /temp/prod && bun install --frozen-lockfile --production
-
-# copy node_modules from temp directory
-# then copy all (non-ignored) project files into the image
-FROM base AS prerelease
-COPY --from=install /temp/dev/node_modules node_modules
+# Build the app
+FROM base AS build
+COPY --from=dependencies /temp/dev/node_modules node_modules
 COPY . .
 
-
-# [optional] tests & build
 ENV NODE_ENV=production
+RUN bun run typecheck
 RUN bun test
 RUN bun run build
 
-# run the app
-USER bun
-EXPOSE 3000/tcp
-ENTRYPOINT [ "bun", "run", "start" ]
+# Production image
+FROM nginx:alpine AS production
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=build /usr/src/app/dist .
+
+EXPOSE 80/tcp
+
+CMD ["nginx", "-g", "daemon off;"]
