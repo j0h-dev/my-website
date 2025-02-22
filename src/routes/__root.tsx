@@ -5,11 +5,13 @@ export const Route = createRootRoute({
   component: RootComponent,
 })
 
+const isDevelopmentMode = import.meta.env.DEV
+
 function RootComponent() {
   return (
     <>
       <Outlet />
-      <TanStackRouterDevtools position="bottom-right" />
+      {isDevelopmentMode && <TanStackRouterDevtools position="bottom-right" />}
     </>
   )
 }
