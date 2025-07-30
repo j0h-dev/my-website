@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ShapesRouteImport } from './routes/shapes'
 import { Route as DefaultRouteImport } from './routes/_default'
 import { Route as DefaultIndexRouteImport } from './routes/_default/index'
 
+const ShapesRoute = ShapesRouteImport.update({
+  id: '/shapes',
+  path: '/shapes',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DefaultRoute = DefaultRouteImport.update({
   id: '/_default',
   getParentRoute: () => rootRouteImport,
@@ -23,30 +29,41 @@ const DefaultIndexRoute = DefaultIndexRouteImport.update({
 } as any)
 
 export interface FileRoutesByFullPath {
+  '/shapes': typeof ShapesRoute
   '/': typeof DefaultIndexRoute
 }
 export interface FileRoutesByTo {
+  '/shapes': typeof ShapesRoute
   '/': typeof DefaultIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_default': typeof DefaultRouteWithChildren
+  '/shapes': typeof ShapesRoute
   '/_default/': typeof DefaultIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/shapes' | '/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/_default' | '/_default/'
+  to: '/shapes' | '/'
+  id: '__root__' | '/_default' | '/shapes' | '/_default/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   DefaultRoute: typeof DefaultRouteWithChildren
+  ShapesRoute: typeof ShapesRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/shapes': {
+      id: '/shapes'
+      path: '/shapes'
+      fullPath: '/shapes'
+      preLoaderRoute: typeof ShapesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/_default': {
       id: '/_default'
       path: ''
@@ -77,6 +94,7 @@ const DefaultRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   DefaultRoute: DefaultRouteWithChildren,
+  ShapesRoute: ShapesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
