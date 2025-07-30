@@ -1,3 +1,3 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Sitemap: https://heinonenjaro.xyz/sitemap.xml
+Sitemap: https://j0h.dev/sitemap.xml
