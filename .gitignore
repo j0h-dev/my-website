@@ -14,6 +14,9 @@ dist/
 .netlify
 .wrangler
 
+# tmp
+.tanstack/
+
 # IDE
 .vscode/*
 !.vscode/extensions.json
