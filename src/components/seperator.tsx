@@ -1,5 +1,3 @@
 export function Seperator() {
-  return (
-    <span className="my-8 h-0.5 w-full border border-dashed border-slate-100" />
-  )
+  return <span className="h-0.5 w-full border border-dashed border-slate-100" />
 }

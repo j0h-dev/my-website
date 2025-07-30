@@ -1,4 +1,4 @@
-import { cn } from '@/utils/shadcn'
+import { cn } from '@/lib/utils'
 import type { ISourceOptions } from '@tsparticles/engine'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { useEffect, useMemo, useState } from 'react'

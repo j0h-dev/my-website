@@ -15,7 +15,7 @@ function RouteComponent() {
       <ParticleBackground fullscreen={true} />
 
       <div className="flex grow flex-col items-center px-6">
-        <div className="h-full w-full max-w-7xl grow py-4">
+        <div className="h-full w-full max-w-5xl grow py-4">
           <Outlet />
         </div>
       </div>

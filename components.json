@@ -5,16 +5,16 @@
   "tsx": true,
   "tailwind": {
     "config": "",
-    "css": "src/main.css",
-    "baseColor": "zinc",
+    "css": "src/index.css",
+    "baseColor": "gray",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/utils/shadcn",
+    "utils": "@/lib/utils",
     "ui": "@/components/ui",
-    "lib": "@/utils",
+    "lib": "@/lib",
     "hooks": "@/hooks"
   },
   "iconLibrary": "lucide"
