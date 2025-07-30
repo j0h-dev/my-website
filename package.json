@@ -4,11 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "typecheck": "tsc --noEmit",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css}\"",
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,js,md,mdx,css}\""
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
