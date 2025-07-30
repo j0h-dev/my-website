@@ -41,6 +41,7 @@
     "tailwind-merge": "^3.0.1",
     "tailwindcss": "^4.0.5",
     "tailwindcss-animate": "^1.0.7",
-    "tsparticles": "^3.8.1"
+    "tsparticles": "^3.8.1",
+    "zod": "^4.0.14"
   }
 }
