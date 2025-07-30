@@ -40,7 +40,7 @@ function HeroSection() {
       <div className="space-y-3">
         <h1 className="space-y-4">
           <p className="text-6xl font-semibold">
-            Hello, I'm <span className="gradient-animation">Jaro</span>
+            {"Hello, I'm"} <span className="gradient-animation">Jaro</span>
           </p>
         </h1>
         <p className="text-2xl">Fullstack Developer & Software Engineer</p>
@@ -52,7 +52,11 @@ function HeroSection() {
 
       <div className="flex gap-4">
         <Button variant="ghost" size={'icon'}>
-          <a href="https://github.com/ItsOnlyGame" target="_blank">
+          <a
+            href="https://github.com/ItsOnlyGame"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SiGithub className="size-6" />
           </a>
         </Button>
@@ -74,13 +78,13 @@ function AboutMe() {
 
         <div className="grid items-center space-y-6 text-lg">
           <p>
-            I'm a programmer with over 12 years of hobbyist experience building
-            many different applications like games, CLI tools and web
+            {"I'm"} a programmer with over 12 years of hobbyist experience
+            building many different applications like games, CLI tools and web
             applications.
           </p>
           <p>
-            When I'm not coding, you can find me exploring new technologies and
-            staying up-to-date with the latest trends.
+            When {"I'm"} not coding, you can find me exploring new technologies
+            and staying up-to-date with the latest trends.
           </p>
           <p>I create applications and tools with modern technologies</p>
         </div>
@@ -286,7 +290,7 @@ function Projects() {
               <CardFooter className="mt-auto flex gap-2">
                 {project.liveUrl && (
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank">
+                    <a href={project.liveUrl} target="_blank" rel="noreferrer">
                       <ExternalLinkIcon className="mr-2 h-4 w-4" />
                       Live Demo
                     </a>
@@ -294,7 +298,11 @@ function Projects() {
                 )}
                 {project.githubUrl && (
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <SiGithub className="mr-2 h-4 w-4" />
                       Code
                     </a>
@@ -426,11 +434,11 @@ function Contact() {
         </h2>
 
         <div className="space-y-8">
-          <h3 className="text-2xl font-semibold">Let's work together</h3>
+          <h3 className="text-2xl font-semibold">{"Let's"} work together</h3>
           <p className="text-lg">
-            I'm always interested in new opportunities and exciting projects.
-            Whether you have a question or just want to say hi, feel free to
-            reach out!
+            {"I'm"} always interested in new opportunities and exciting
+            projects. Whether you have a question or just want to say hi, feel
+            free to reach out!
           </p>
 
           <div className="flex items-center gap-4">
