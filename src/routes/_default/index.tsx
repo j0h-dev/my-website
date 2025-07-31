@@ -287,7 +287,12 @@ function Projects() {
               <CardFooter className="mt-auto flex gap-2">
                 {project.liveUrl && (
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                    <a
+                      aria-label={`Live demo of ${project.title}`}
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <ExternalLinkIcon className="mr-2 h-4 w-4" />
                       Live Demo
                     </a>
@@ -296,6 +301,7 @@ function Projects() {
                 {project.githubUrl && (
                   <Button variant="outline" size="sm" asChild>
                     <a
+                      aria-label={`Source code of ${project.title}`}
                       href={project.githubUrl}
                       target="_blank"
                       rel="noreferrer"
