@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { Menu, MoonIcon, SunIcon, X } from 'lucide-react'
+import { MenuIcon, MoonIcon, SunIcon, XIcon } from 'lucide-react'
 import { useState } from 'react'
 import { useTheme } from './theme-provider'
 import { Button } from './ui/button'
@@ -49,9 +49,9 @@ export function Header() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6" />
+            <XIcon className="h-6 w-6" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <MenuIcon className="h-6 w-6" />
           )}
         </Button>
       </div>
