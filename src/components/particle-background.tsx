@@ -3,6 +3,7 @@ import type { ISourceOptions } from '@tsparticles/engine'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { useEffect, useMemo, useState } from 'react'
 import { loadFull } from 'tsparticles'
+import { useTheme } from './theme-provider'
 
 type ParticleBackgroundProps = {
   className?: string
@@ -12,6 +13,7 @@ export function ParticleBackground({
   className,
   fullscreen = false,
 }: ParticleBackgroundProps) {
+  const { theme } = useTheme()
   const [init, setInit] = useState(false)
 
   // this should be run only once per application lifetime
@@ -35,7 +37,7 @@ export function ParticleBackground({
           value: 80,
         },
         color: {
-          value: '#fff',
+          value: theme === 'dark' ? '#fff' : '#000',
         },
         shape: {
           type: '',
@@ -55,10 +57,10 @@ export function ParticleBackground({
           straight: false,
         },
         links: {
-          color: '#ffffff',
+          color: theme === 'dark' ? '#fff' : '#000',
           distance: 150,
           enable: true,
-          opacity: 0.1,
+          opacity: 0.2,
           width: 1,
         },
         collisions: {
@@ -67,7 +69,7 @@ export function ParticleBackground({
       },
       detectRetina: true,
     }),
-    [fullscreen]
+    [fullscreen, theme]
   )
 
   if (!init) {
