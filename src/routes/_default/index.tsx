@@ -1,3 +1,5 @@
+import { GithubLink } from '@/components/external-links/github-link'
+import { LinkedinLink } from '@/components/external-links/linkedin-link'
 import { LinkedinIcon } from '@/components/icons/linkedin'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -9,7 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { LinkButton } from '@/components/ui/link-button'
 import { cn } from '@/lib/utils'
 import { SiGithub } from '@icons-pack/react-simple-icons'
 import { createFileRoute } from '@tanstack/react-router'
@@ -51,20 +52,16 @@ function HeroSection() {
       </p>
 
       <div className="flex gap-4">
-        <Button variant="ghost" size={'icon'}>
-          <a
-            href="https://github.com/ItsOnlyGame"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <Button variant="ghost" size={'icon'} asChild>
+          <GithubLink>
             <SiGithub className="size-6" />
-          </a>
+          </GithubLink>
         </Button>
-        <LinkButton variant="ghost" size={'icon'}>
-          <a href="https://www.linkedin.com/in/jaroheinonen/">
+        <Button variant="ghost" size={'icon'} asChild>
+          <LinkedinLink>
             <LinkedinIcon className="size-6" />
-          </a>
-        </LinkButton>
+          </LinkedinLink>
+        </Button>
       </div>
     </section>
   )
@@ -449,16 +446,13 @@ function Contact() {
             </div>
           </div>
 
-          <a
-            href="https://www.linkedin.com/in/jaroheinonen/"
-            className="flex w-max items-center gap-4"
-          >
+          <LinkedinLink className="flex w-max items-center gap-4">
             <LinkedinIcon className="text-primary h-6 w-6" />
             <div>
               <p className="font-medium">LinkedIn</p>
               <p className="text-muted-foreground">Jaro Heinonen</p>
             </div>
-          </a>
+          </LinkedinLink>
         </div>
       </div>
     </section>
