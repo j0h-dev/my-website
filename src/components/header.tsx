@@ -34,6 +34,7 @@ export function Header() {
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+        <span className="sr-only">Change color theme</span>
       </Button>
     </header>
   )
