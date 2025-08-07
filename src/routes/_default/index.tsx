@@ -177,6 +177,7 @@ function Projects() {
         'CI/CD',
         'Linux / Linode',
       ],
+      image: '/images/lavida-website.webp',
       liveUrl: 'https://liikuntapistelavida.com',
     },
     {
