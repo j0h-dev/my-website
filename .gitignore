@@ -16,6 +16,7 @@ dist/
 
 # tmp
 .tanstack/
+stats.html
 
 # IDE
 .vscode/*
