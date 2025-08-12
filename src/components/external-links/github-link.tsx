@@ -6,7 +6,7 @@ export function GithubLink({ children, className }: GithubLinkProps) {
   return (
     <a
       aria-label="Link to Github profile"
-      href="https://github.com/ItsOnlyGame"
+      href="https://github.com/j0h-dev"
       target="_blank"
       rel="noreferrer"
       className={className}
