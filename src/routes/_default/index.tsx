@@ -93,28 +93,30 @@ function AboutMe() {
 function Skills() {
   const skillCategories = [
     {
+      title: 'Languages',
+      skills: [
+        'Javascript',
+        'Typescript',
+        'Go (Golang)',
+        'Java',
+        'Python',
+        'Bash',
+      ],
+    },
+    {
       title: 'Frontend',
       skills: [
         'Next.js',
         'React',
         'Nuxt.js',
         'Vue.js',
-        'TypeScript',
-        'JavaScript',
         'HTML & CSS',
         'Tailwind CSS',
       ],
     },
     {
       title: 'Backend',
-      skills: [
-        'Node.js',
-        'Golang',
-        'Gin-Gonic',
-        'Express.js',
-        'REST APIs',
-        'tRPC',
-      ],
+      skills: ['Node.js', 'Gin-Gonic', 'Express.js', 'REST APIs', 'tRPC'],
     },
     {
       title: 'Database',
@@ -169,7 +171,7 @@ function Projects() {
       technologies: [
         'React',
         'TypeScript',
-        'Golang',
+        'Go (Golang)',
         'Gin-Gonic',
         'PostgreSQL',
         'TailwindCSS',
