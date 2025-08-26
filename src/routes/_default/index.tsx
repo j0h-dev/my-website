@@ -194,7 +194,7 @@ function Projects() {
         'Unit testing',
         'Github Workflows',
       ],
-      githubUrl: 'https://github.com/ItsOnlyGame/my-spotify-playlist-sorter',
+      githubUrl: 'https://github.com/j0h-dev/my-spotify-playlist-sorter',
     },
     {
       title: "Drag 'n' Convert",
@@ -210,40 +210,40 @@ function Projects() {
         'Github Workflows',
       ],
       liveUrl: 'https://dragnconvert.j0h.dev',
-      githubUrl: 'https://github.com/ItsOnlyGame/dragnconvert',
+      githubUrl: 'https://github.com/j0h-dev/dragnconvert',
     },
     {
       title: 'YT-DLP Web App',
       description: 'App to download videos from YouTube.',
       image:
-        'https://raw.githubusercontent.com/ItsOnlyGame/yt-dlp-webapp/refs/heads/main/assets/screenshot.png',
+        'https://raw.githubusercontent.com/j0h-dev/yt-dlp-webapp/refs/heads/main/assets/screenshot.png',
       technologies: ['React', 'yt-dlp', 'Golang', 'Gin-Gonic'],
-      githubUrl: 'https://github.com/ItsOnlyGame/yt-dlp-webapp',
+      githubUrl: 'https://github.com/j0h-dev/yt-dlp-webapp',
     },
     {
       title: 'Nuxt UI Component Collection',
       description:
         'Collection of reusable UI components for Nuxt.js, insipred by WindUI.',
       image:
-        'https://raw.githubusercontent.com/ItsOnlyGame/nuxt-ui-components/main/public/icon.svg',
+        'https://raw.githubusercontent.com/j0h-dev/nuxt-ui-components/main/public/icon.svg',
       technologies: ['Vue.js', 'Nuxt.js', 'TailwindCSS'],
-      githubUrl: 'https://github.com/ItsOnlyGame/nuxt-ui-components',
+      githubUrl: 'https://github.com/j0h-dev/nuxt-ui-components',
     },
     {
       title: 'Rift',
       description:
         'Discord bot that provides music playback from YouTube or SoundCloud. Matches Spotify tracks to Youtube videos to hack spotify playback.',
       technologies: ['Java', 'Gradle', 'Spotify API', 'Discord API'],
-      githubUrl: 'https://github.com/ItsOnlyGame/Rift',
+      githubUrl: 'https://github.com/j0h-dev/Rift',
     },
     {
       title: 'Blocky Awoid',
       description:
         'First ever game I made, a game where you avoid different blocks that bounce around the screen.',
       image:
-        'https://media.githubusercontent.com/media/ItsOnlyGame/Blocky-Awoid/main/.github/preview.png',
+        'https://media.githubusercontent.com/media/j0h-dev/Blocky-Awoid/main/.github/preview.png',
       technologies: ['Java'],
-      githubUrl: 'https://github.com/ItsOnlyGame/Blocky-Awoid',
+      githubUrl: 'https://github.com/j0h-dev/Blocky-Awoid',
     },
   ]
 
