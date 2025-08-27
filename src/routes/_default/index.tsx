@@ -116,7 +116,14 @@ function Skills() {
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Gin-Gonic', 'Express.js', 'REST APIs', 'tRPC'],
+      skills: [
+        'Node.js',
+        'Gin-Gonic',
+        'Express.js',
+        'REST APIs',
+        'tRPC',
+        'oRPC',
+      ],
     },
     {
       title: 'Database',
@@ -124,7 +131,17 @@ function Skills() {
     },
     {
       title: 'DevOps & Tools',
-      skills: ['Docker', 'Vercel', 'Git', 'GitHub Actions', 'Vite', 'Linux'],
+      skills: [
+        'Docker',
+        'Vercel',
+        'Git',
+        'GitHub Actions',
+        'Vite',
+        'Linux',
+        'Coolify',
+        'Turbopack',
+        'Monorepo',
+      ],
     },
     {
       title: 'Other',
@@ -164,6 +181,24 @@ function Skills() {
 
 function Projects() {
   const projects = [
+    {
+      title: 'Piper - UNDER DEVELOPMENT',
+      description:
+        'A modern, fast and minimalistic project management application for teams and individuals. Currently features task management and simple project file storage.',
+      technologies: [
+        'React',
+        'TypeScript',
+        'Node.js',
+        'Hono',
+        'oRPC',
+        'PostgreSQL',
+        'TailwindCSS',
+        'Turbopack',
+        'Monorepo',
+      ],
+      image: '/images/piper.webp',
+      githubUrl: 'https://github.com/j0h-dev/piper',
+    },
     {
       title: 'Business Website - Liikuntapiste Lavida',
       description:
