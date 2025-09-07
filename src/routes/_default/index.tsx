@@ -363,7 +363,7 @@ function Experience() {
     {
       title: 'Lead Full-Stack Developer',
       company: 'Labriikki - TurkuAMK',
-      period: 'May 2025 - Present',
+      period: 'May 2025 - September 2025',
       description: [
         'Lead full-stack development for a web application to help TurkuAMK laboratories with 6S Lean principles, taking ownership of both frontend and backend work. I designed backend architectures and database schemas, ensuring scalable and maintainable systems.',
       ],
@@ -380,7 +380,7 @@ function Experience() {
     {
       title: 'Freelance Fullstack Developer and Web Administrator',
       company: 'LiikuntaPiste La Vida',
-      period: 'May 2020 - Present',
+      period: 'May 2020 - August 2025',
       description: [
         'Build a modern business website for a gym, featuring user authentication, admin dashboard, and a reservation calendar. I also maintain the website and ensure its smooth operation.',
       ],
