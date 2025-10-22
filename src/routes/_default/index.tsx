@@ -489,13 +489,16 @@ function Contact() {
             free to reach out!
           </p>
 
-          <div className="flex items-center gap-4">
+          <a
+            className="flex w-fit items-center gap-4"
+            href="mailto:heinonenjaro@proton.me"
+          >
             <MailIcon className="text-primary h-6 w-6" />
             <div>
               <p className="font-medium">Email</p>
               <p className="text-muted-foreground">heinonenjaro@proton.me</p>
             </div>
-          </div>
+          </a>
 
           <LinkedinLink className="flex w-max items-center gap-4">
             <LinkedinIcon className="text-primary h-6 w-6" />
