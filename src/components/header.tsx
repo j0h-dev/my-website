@@ -1,7 +1,9 @@
-import { Link } from '@tanstack/react-router'
+'use client'
+
 import { MenuIcon, MoonIcon, SunIcon, XIcon } from 'lucide-react'
+import Link from 'next/link'
+import { useTheme } from 'next-themes'
 import { useState } from 'react'
-import { useTheme } from './theme-provider'
 import { Button } from './ui/button'
 
 export function Header() {
@@ -23,9 +25,8 @@ export function Header() {
           {navItems.map((item) => (
             <Link
               key={item.hash}
-              hash={item.hash}
-              to="/"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              href={`/#${item.hash}`}
+              className="text-muted-foreground transition-colors hover:text-primary"
             >
               {item.label}
             </Link>
@@ -61,10 +62,9 @@ export function Header() {
           <nav>
             {navItems.map((item) => (
               <Link
-                to="/"
+                href={`/#${item.hash}`}
                 key={item.hash}
-                hash={item.hash}
-                className="text-muted-foreground hover:text-primary block p-2 transition-colors"
+                className="block p-2 text-muted-foreground transition-colors hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

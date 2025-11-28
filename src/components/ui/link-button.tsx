@@ -1,12 +1,14 @@
-import { Link, type LinkComponentProps } from '@tanstack/react-router'
 import type { VariantProps } from 'class-variance-authority'
+import Link, { type LinkProps } from 'next/link'
 import { forwardRef } from 'react'
 import type { buttonVariants } from './button'
 import { Button } from './button'
 
-type LinkButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
-  LinkComponentProps &
-  VariantProps<typeof buttonVariants>
+interface LinkButtonProps
+  extends LinkProps,
+    VariantProps<typeof buttonVariants> {
+  className?: string
+}
 
 const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(
   ({ className, variant, size, ...props }, ref) => {
@@ -15,7 +17,7 @@ const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(
         <Link ref={ref} {...props} />
       </Button>
     )
-  }
+  },
 )
 
 LinkButton.displayName = 'LinkButton'

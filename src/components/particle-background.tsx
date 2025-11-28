@@ -1,9 +1,11 @@
-import { cn } from '@/lib/utils'
+'use client'
+
 import type { ISourceOptions } from '@tsparticles/engine'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
+import { useTheme } from 'next-themes'
 import { useEffect, useMemo, useState } from 'react'
 import { loadFull } from 'tsparticles'
-import { useTheme } from './theme-provider'
+import { cn } from '@/lib/utils'
 
 type ParticleBackgroundProps = {
   className?: string
@@ -69,7 +71,7 @@ export function ParticleBackground({
       },
       detectRetina: true,
     }),
-    [fullscreen, theme]
+    [fullscreen, theme],
   )
 
   if (!init) {
