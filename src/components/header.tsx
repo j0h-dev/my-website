@@ -1,12 +1,12 @@
 'use client'
 
 import { MenuIcon, XIcon } from 'lucide-react'
+import { motion } from 'motion/react'
 import Link from 'next/link'
 import { useState } from 'react'
+import { cn } from '@/lib/utils'
 import { ThemeToggle } from './theme-toggle'
 import { Button } from './ui/button'
-import { cn } from '@/lib/utils'
-import { motion } from "motion/react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,7 +20,9 @@ export function Header() {
   ]
 
   return (
-    <header className={cn('transition-all duration-75', isMenuOpen ? 'bg-card' : '')}>
+    <header
+      className={cn('transition-all duration-75', isMenuOpen ? 'bg-card' : '')}
+    >
       {/* Header buttons */}
       <div className="z-20 flex items-center justify-end gap-6 px-6 py-4 backdrop-blur-sm md:px-12">
         <nav className="hidden space-x-8 md:flex">
@@ -35,9 +37,7 @@ export function Header() {
           ))}
         </nav>
 
-        <ThemeToggle>
-          <span className="sr-only">Change color theme</span>
-        </ThemeToggle>
+        <ThemeToggle />
 
         <Button
           variant="ghost"
@@ -59,7 +59,7 @@ export function Header() {
           initial={{ y: -200 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.1 }}
-          className="absolute bg-card z-10 w-full space-y-2 border-muted border-b p-4 md:hidden"
+          className="absolute z-10 w-full space-y-2 border-muted border-b bg-card p-4 md:hidden"
         >
           <nav>
             {navItems.map((item) => (
@@ -73,8 +73,6 @@ export function Header() {
               </Link>
             ))}
           </nav>
-
-          <ThemeToggle>Change color theme</ThemeToggle>
         </motion.div>
       )}
     </header>
