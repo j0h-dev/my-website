@@ -1,11 +1,12 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Fira_Code } from 'next/font/google'
-import './globals.css'
-import { Analytics } from '@vercel/analytics/next'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { ParticleBackground } from '@/components/particle-background'
 import { ThemeProvider } from '@/components/theme-provider'
+
+import './globals.css'
 
 const geistSans = Fira_Code({
   variable: '--font-fira-code',
