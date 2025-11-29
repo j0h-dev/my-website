@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 import { Button } from './ui/button'
 import { cn } from '@/lib/utils'
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
