@@ -176,7 +176,7 @@ export function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Github size={24} color="#FFFFFF" />
+                      <Github size={24} />
                       Code
                     </a>
                   </Button>
