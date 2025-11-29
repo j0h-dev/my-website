@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Fira_Code } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/next'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { ParticleBackground } from '@/components/particle-background'
@@ -25,6 +26,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={`${geistSans.variable} antialiased`}>
+        <Analytics />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
