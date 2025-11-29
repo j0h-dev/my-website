@@ -1,14 +1,15 @@
 'use client'
 
-import { MenuIcon, MoonIcon, SunIcon, XIcon } from 'lucide-react'
+import { MenuIcon, XIcon } from 'lucide-react'
 import Link from 'next/link'
-import { useTheme } from 'next-themes'
 import { useState } from 'react'
+import { ThemeToggle } from './theme-toggle'
 import { Button } from './ui/button'
+import { cn } from '@/lib/utils'
+import { AnimatePresence, motion } from "framer-motion";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { setTheme, theme } = useTheme()
 
   const navItems = [
     { hash: 'about', label: 'About' },
@@ -19,8 +20,9 @@ export function Header() {
   ]
 
   return (
-    <header className="px-6 backdrop-blur-sm md:px-12">
-      <div className="flex items-center justify-end gap-6 py-4">
+    <header className={cn('transition-all duration-75', isMenuOpen ? 'bg-card' : '')}>
+      {/* Header buttons */}
+      <div className="z-20 flex items-center justify-end gap-6 px-6 py-4 backdrop-blur-sm md:px-12">
         <nav className="hidden space-x-8 md:flex">
           {navItems.map((item) => (
             <Link
@@ -33,15 +35,9 @@ export function Header() {
           ))}
         </nav>
 
-        <Button
-          variant="ghost"
-          size={'icon'}
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="hidden md:inline-flex"
-        >
-          {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+        <ThemeToggle>
           <span className="sr-only">Change color theme</span>
-        </Button>
+        </ThemeToggle>
 
         <Button
           variant="ghost"
@@ -57,8 +53,14 @@ export function Header() {
         </Button>
       </div>
 
+      {/* Hamburger button (Mobile menu) */}
       {isMenuOpen && (
-        <div className="space-y-2 border-t py-4 md:hidden">
+        <motion.div
+          initial={{ y: -200 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.1 }}
+          className="absolute bg-card z-10 w-full space-y-2 border-muted border-b p-4 md:hidden"
+        >
           <nav>
             {navItems.map((item) => (
               <Link
@@ -72,15 +74,8 @@ export function Header() {
             ))}
           </nav>
 
-          <Button
-            className="text-muted-foreground hover:text-primary"
-            variant="ghost"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          >
-            {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-            Change color theme
-          </Button>
-        </div>
+          <ThemeToggle>Change color theme</ThemeToggle>
+        </motion.div>
       )}
     </header>
   )
