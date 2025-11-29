@@ -34,6 +34,9 @@ export function ParticleBackground({
         zIndex: -100,
       },
       fpsLimit: 120,
+      background: {
+        opacity: 1
+      },
       particles: {
         number: {
           value: 80,
@@ -60,9 +63,9 @@ export function ParticleBackground({
         },
         links: {
           color: theme === 'dark' ? '#fff' : '#000',
-          distance: 150,
+          distance: 120,
           enable: true,
-          opacity: 0.2,
+          opacity: theme === 'dark' ? 0.1 : 0.5,
           width: 1,
         },
         collisions: {
