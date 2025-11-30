@@ -11,8 +11,8 @@ export function Contact() {
         </h2>
 
         <div className="space-y-8">
-          <h3 className="font-semibold text-2xl">{"Let's"} work together</h3>
-          <p className="text-lg">
+          <h3 className="font-semibold text-2xl">{"Let's work together"}</h3>
+          <p>
             {"I'm"} always interested in new opportunities and exciting
             projects. Whether you have a question or just want to say hi, feel
             free to reach out!

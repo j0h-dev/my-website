@@ -4,7 +4,7 @@ export function AboutMe() {
       <div className="max-w-6xl space-y-12">
         <h2 className="text-center font-bold text-3xl md:text-4xl">About Me</h2>
 
-        <div className="grid items-center space-y-6 text-lg">
+        <div className="grid items-center space-y-6">
           <p>
             {"I'm"} a programmer with over 12 years of hobbyist experience
             building many different applications like games, CLI tools and web
