@@ -11,9 +11,9 @@ export default function Home() {
       <HeroSection />
       <div className="space-y-20">
         <AboutMe />
-        <Skills />
         <Projects />
         <Experiences />
+        <Skills />
         <Contact />
       </div>
     </div>
