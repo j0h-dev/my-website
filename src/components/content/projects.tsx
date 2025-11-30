@@ -71,15 +71,6 @@ const projects = [
     githubUrl: 'https://github.com/j0h-dev/yt-dlp-webapp',
   },
   {
-    title: 'Nuxt UI Component Collection',
-    description:
-      'Collection of reusable UI components for Nuxt.js, insipred by WindUI.',
-    image:
-      'https://raw.githubusercontent.com/j0h-dev/nuxt-ui-components/main/public/icon.svg',
-    technologies: ['Vue.js', 'Nuxt.js', 'TailwindCSS'],
-    githubUrl: 'https://github.com/j0h-dev/nuxt-ui-components',
-  },
-  {
     title: 'Rift',
     description:
       'Discord bot that provides music playback from YouTube or SoundCloud. Matches Spotify tracks to Youtube videos to hack spotify playback.',
