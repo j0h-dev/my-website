@@ -7,3 +7,13 @@ export interface Experience {
   description: string[]
   technologies: Technology[]
 }
+
+export interface Project {
+  title: string
+  description: string
+  technologies: Technology[]
+
+  image?: string
+  liveUrl?: string
+  githubUrl?: string
+}
