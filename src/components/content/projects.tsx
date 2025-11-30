@@ -15,24 +15,6 @@ import {
 
 const projects = [
   {
-    title: 'Piper - UNDER DEVELOPMENT',
-    description:
-      'A modern, fast and minimalistic project management application for teams and individuals. Currently features task management and simple project file storage.',
-    technologies: [
-      'React',
-      'TypeScript',
-      'Node.js',
-      'Hono',
-      'oRPC',
-      'PostgreSQL',
-      'TailwindCSS',
-      'Turbopack',
-      'Monorepo',
-    ],
-    image: '/images/piper.webp',
-    githubUrl: 'https://github.com/j0h-dev/piper',
-  },
-  {
     title: 'Business Website - Liikuntapiste Lavida',
     description:
       'Modern business website for a gym. Features user authentication, admin dashboard, and a reservation calendar.',
