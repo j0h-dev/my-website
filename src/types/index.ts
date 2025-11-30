@@ -8,12 +8,21 @@ export interface Experience {
   technologies: Technology[]
 }
 
+export type LinkType = 'app' | 'demo' | 'github'
+
+export interface ProjectLink {
+  url: string
+  type: LinkType
+}
+
 export interface Project {
   title: string
   description: string
   technologies: Technology[]
 
+  deprecated?: boolean
+
   image?: string
-  liveUrl?: string
-  githubUrl?: string
+
+  links: ProjectLink[]
 }
