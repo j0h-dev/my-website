@@ -1,6 +1,6 @@
 import { AboutMe } from '@/components/content/about-me'
 import { Contact } from '@/components/content/contact'
-import { Experience } from '@/components/content/experience'
+import { Experiences } from '@/components/content/experiences'
 import { HeroSection } from '@/components/content/hero-section'
 import { Projects } from '@/components/content/projects'
 import { Skills } from '@/components/content/skills'
@@ -13,7 +13,7 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Projects />
-        <Experience />
+        <Experiences />
         <Contact />
       </div>
     </div>

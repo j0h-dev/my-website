@@ -1,13 +1,7 @@
-import { Badge } from '../ui/badge'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '../ui/card'
+import type { Experience } from '@/types/experience'
+import { ExperienceItem } from './experience-item'
 
-const experiences = [
+const experiences: Experience[] = [
   {
     title: 'Lead Full-Stack Developer',
     company: 'Labriikki - TurkuAMK',
@@ -72,7 +66,7 @@ const experiences = [
   },
 ]
 
-export function Experience() {
+export function Experiences() {
   return (
     <section id="experience">
       <div className="space-y-12">
@@ -81,38 +75,9 @@ export function Experience() {
         </h2>
 
         <div className="space-y-8">
-          {experiences.map((exp, index) => (
+          {experiences.map((experience, index) => (
             // biome-ignore lint/suspicious/noArrayIndexKey: index is fine as key here
-            <Card key={index}>
-              <CardHeader>
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <CardTitle className="text-xl">{exp.title}</CardTitle>
-                    <CardDescription className="font-medium text-lg text-primary">
-                      {exp.company}
-                    </CardDescription>
-                  </div>
-                  <Badge variant="outline" className="w-fit">
-                    {exp.period}
-                  </Badge>
-                </div>
-              </CardHeader>
-              <CardContent>
-                {exp.description.map((text, index) => (
-                  // biome-ignore lint/suspicious/noArrayIndexKey: index is fine as key here
-                  <p key={index} className="mb-4 text-muted-foreground">
-                    {text}
-                  </p>
-                ))}
-                <div className="flex flex-wrap gap-2">
-                  {exp.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <ExperienceItem experience={experience} key={index} />
           ))}
         </div>
       </div>
