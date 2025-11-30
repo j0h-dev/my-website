@@ -57,7 +57,7 @@ export function Skills() {
     <section id="skills">
       <div className="space-y-12">
         <h2 className="text-center font-bold text-3xl md:text-4xl">
-          Skills & Technologies
+          {'Skills & Technologies'}
         </h2>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
