@@ -37,14 +37,8 @@ const projects = [
     description:
       'An application that sorts Spotify playlists based on various criteria and removes duplicates.',
     image: '/images/my-spotify-playlist-sorter.webp',
-    technologies: [
-      'Python',
-      'Spotify API',
-      'CLI',
-      'Unit testing',
-      'Github Workflows',
-    ],
-    githubUrl: 'https://github.com/j0h-dev/my-spotify-playlist-sorter',
+    technologies: ['Golang', 'Spotify API', 'CLI', 'Github Workflows'],
+    githubUrl: 'https://github.com/j0h-dev/my-spotify-playlist-sorter-go',
   },
   {
     title: "Drag 'n' Convert",
