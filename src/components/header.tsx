@@ -30,7 +30,7 @@ export function Header() {
             <Link
               key={item.hash}
               href={`/#${item.hash}`}
-              className="text-muted-foreground transition-colors hover:text-primary"
+              className="text-muted-foreground transition-colors hover:text-primary-foreground"
             >
               {item.label}
             </Link>
@@ -66,7 +66,7 @@ export function Header() {
               <Link
                 href={`/#${item.hash}`}
                 key={item.hash}
-                className="block p-2 text-muted-foreground transition-colors hover:text-primary"
+                className="block p-2 text-muted-foreground transition-colors hover:text-primary-foreground"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

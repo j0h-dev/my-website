@@ -14,35 +14,35 @@ type ExperienceItemProps = {
 
 export function ExperienceItem({ experience }: ExperienceItemProps) {
   return (
-    <Card>
-      <CardHeader>
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <CardTitle className="text-xl">{experience.title}</CardTitle>
-            <CardDescription className="font-medium text-lg text-primary">
-              {experience.company}
-            </CardDescription>
+    <div>
+      <Card>
+        <CardHeader>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <CardTitle className="text-lg">{experience.title}</CardTitle>
+              <CardDescription className="font-medium text-muted-foreground">
+                {experience.company}
+              </CardDescription>
+            </div>
+            <Badge className="w-fit">{experience.period}</Badge>
           </div>
-          <Badge variant="outline" className="w-fit">
-            {experience.period}
-          </Badge>
-        </div>
-      </CardHeader>
-      <CardContent>
-        {experience.description.map((text, index) => (
-          // biome-ignore lint/suspicious/noArrayIndexKey: index is fine as key here
-          <p key={index} className="mb-4 text-muted-foreground">
-            {text}
-          </p>
-        ))}
-        <div className="flex flex-wrap gap-2">
-          {experience.technologies.map((tech) => (
-            <Badge key={tech} variant="secondary" className="text-xs">
-              {tech}
-            </Badge>
+        </CardHeader>
+        <CardContent>
+          {experience.description.map((text, index) => (
+            // biome-ignore lint/suspicious/noArrayIndexKey: index is fine as key here
+            <p key={index} className="mb-4 text-muted-foreground">
+              {text}
+            </p>
           ))}
-        </div>
-      </CardContent>
-    </Card>
+          <div className="flex flex-wrap gap-2">
+            {experience.technologies.map((tech) => (
+              <Badge key={tech} className="text-xs">
+                {tech}
+              </Badge>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   )
 }

@@ -25,7 +25,10 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
 
   return (
     <Button
-      className={cn('text-muted-foreground hover:text-primary', className)}
+      className={cn(
+        'text-muted-foreground hover:text-primary-foreground',
+        className,
+      )}
       variant="ghost"
       size={'icon'}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

@@ -69,9 +69,7 @@ export function Skills() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary">
-                      {skill}
-                    </Badge>
+                    <Badge key={skill}>{skill}</Badge>
                   ))}
                 </div>
               </CardContent>

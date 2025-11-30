@@ -22,7 +22,7 @@ export function Contact() {
             className="flex w-fit items-center gap-4"
             href="mailto:heinonenjaro@proton.me"
           >
-            <MailIcon className="h-6 w-6 text-primary" />
+            <MailIcon className="h-6 w-6" />
             <div>
               <p className="font-medium">Email</p>
               <p className="text-muted-foreground">heinonenjaro@proton.me</p>
@@ -30,7 +30,7 @@ export function Contact() {
           </a>
 
           <LinkedinLink className="flex w-max items-center gap-4">
-            <Linkedin className="h-6 w-6 text-primary" />
+            <Linkedin className="h-6 w-6" />
             <div>
               <p className="font-medium">LinkedIn</p>
               <p className="text-muted-foreground">Jaro Heinonen</p>
