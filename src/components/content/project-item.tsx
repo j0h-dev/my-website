@@ -1,10 +1,7 @@
-import { Github } from '@deemlol/next-icons'
-import { ExternalLinkIcon } from 'lucide-react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import type { Project } from '@/types'
 import { Badge } from '../ui/badge'
-import { Button } from '../ui/button'
 import {
   Card,
   CardContent,
