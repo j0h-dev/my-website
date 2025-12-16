@@ -27,13 +27,9 @@ export function ProjectItem({ project }: ProjectItemProps) {
           <Image
             src={project.image}
             alt={project.title}
-            className="h-full w-full object-fill"
+            className="h-full w-full"
             fill
-            sizes="
-              (max-width: 640px) 100vw,
-              (max-width: 1024px) 90vw,
-              80vw
-            "
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       )}
