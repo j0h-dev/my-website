@@ -29,8 +29,8 @@ const projects: Project[] = [
     title: 'Spotify Playlist Sorter',
     description:
       'An application that sorts Spotify playlists based on various criteria and removes duplicates.',
-    image: '/images/my-spotify-playlist-sorter.webp',
-    technologies: ['Golang', 'Spotify API', 'CLI', 'Github Workflows'],
+    image: '/images/my-spotify-playlist-sorter.png',
+    technologies: ['Golang', 'Spotify API', 'CLI', 'TUI', 'Github Workflows'],
     links: [
       {
         type: 'github',
