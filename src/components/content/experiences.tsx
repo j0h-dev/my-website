@@ -3,6 +3,22 @@ import { ExperienceItem } from './experience-item'
 
 const experiences: Experience[] = [
   {
+    title: 'Software Developer',
+    company: 'theFIRMA - TurkuAMK',
+    period: 'September 2025 - December 2025',
+    description: [
+      'I worked on a customer project for Action Lähetit. My job was to mentor the new students and help them get started with the project. I also contributed to the development of the application by implementing new features and fixing bugs.',
+    ],
+    technologies: [
+      'Excel VBS',
+      'Firebase',
+      'Typescript',
+      'React',
+      'Node.js',
+      'Express.js'
+    ],
+  },
+  {
     title: 'Lead Full-Stack Developer',
     company: 'Labriikki - TurkuAMK',
     period: 'May 2025 - September 2025',
@@ -67,6 +83,27 @@ const experiences: Experience[] = [
       'MySQL',
       'Postgres',
       'Tailwind CSS',
+    ],
+  },
+  {
+    title: 'Fullstack Developer',
+    company: 'theFIRMA - TurkuAMK',
+    period: 'September 2023 - January 2024',
+    description: [
+      'Worked as a full-stack developer on multiple web applications using React, Node.js, Express, and TypeScript/JavaScript with MySQL and MongoDB.',
+      'Developed backend APIs and core functionality for laboratory monitoring and internal reservation systems. Contributed to deployment and maintenance to ensure reliable and stable application operation.'
+    ],
+    technologies: [
+      'React',
+      'TypeScript',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'MySQL',
+      'MongoDB',
+      'Tailwind CSS',
+      'CSS',
+      'Linux'
     ],
   },
 ]
